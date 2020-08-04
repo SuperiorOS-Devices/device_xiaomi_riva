@@ -20,19 +20,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Lineage stuff
+# Inherit some common superior stuff
 $(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit from riva device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+#Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 720
+
+# Launcher
+TARGET_LAUNCHER := oplauncher
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := riva
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 5A
 PRODUCT_NAME := superior_riva
-
-TARGET_BOOT_ANIMATION_RES := 720
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
