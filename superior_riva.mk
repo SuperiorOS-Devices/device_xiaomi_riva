@@ -29,9 +29,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 #Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 720
 
-# Launcher
-TARGET_LAUNCHER := oplauncher
-
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := riva
 PRODUCT_MANUFACTURER := Xiaomi
